@@ -1,0 +1,31 @@
+//imports
+@import 'variables';
+@import "scss/functions";
+@import "scss/variables";
+@import "scss/mixins";
+
+#logo {
+    max-width: 80px;
+    margin-right: 10px;
+}
+
+.navbar {
+    border-bottom: 2px dashed #b5b1b1;
+
+    li {
+        font-size: 20px;
+
+        .nav-link {
+            cursor: pointer;
+
+            &:hover {
+                color: $primary;
+            }
+    
+            &.active {
+                color: $tertiary;
+                font-weight: bold;
+            }
+        }
+    }
+}

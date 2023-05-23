@@ -1,0 +1,49 @@
+//Fonts
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento&display=swap');
+
+//import variables
+@import 'variables';
+
+//Bootstrap
+@import "scss/functions";
+@import "scss/variables";
+@import "scss/mixins";
+
+body {
+    font-family: $font-primary;
+}
+
+.card-title {
+    color: $primary;
+}
+
+.examplesTitle {
+    color: $primary;
+}
+
+.list-group-item {
+    span {
+        margin-right: 5px;
+        color: $tertiary;
+    }
+}
+
+.resultBox {
+    background-color: $bg-primary;
+    border: 1px solid #000;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+    min-height: 42px;
+    padding: 8px;
+
+    @include media-breakpoint-up(md) {
+        width: 300px;
+    }
+}
+
+.btn-lg {
+    padding-bottom: 13px;
+    padding-top: 13px;
+}

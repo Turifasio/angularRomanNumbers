@@ -1,0 +1,57 @@
+@import "variables";
+@import "scss/functions";
+@import "scss/variables";
+@import "scss/mixins";
+
+#clouds {
+    position: fixed;
+    bottom: 0;
+    z-index: -10;
+    width: 1920px;
+
+    @include media-breakpoint-up(sm) {
+        bottom: -125px;
+    }
+}
+
+.component-grid {
+    flex-direction: column;
+    margin-top: 20px;
+    
+    @include media-breakpoint-up(md) {
+        flex-direction: row;
+        margin-top: 40px;
+    }
+}
+
+.legend {
+    background-color: white;
+    max-height: 315px;
+    margin-bottom: 20px;
+    padding: 10px;
+
+    @include media-breakpoint-up(md) {
+        min-width: 300px;
+        padding: 20px;
+    }
+
+    .title {
+        color: $primary;
+    }
+
+    .numbers {
+        font-size: 18px;
+
+        tr {
+            td:first-child {
+                min-width: 80px;
+            }
+        }
+    }
+}
+
+.components-container {
+    @include media-breakpoint-up(md) {
+        padding-left: 20px;
+    }
+}
