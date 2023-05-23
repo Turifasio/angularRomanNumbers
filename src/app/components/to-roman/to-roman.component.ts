@@ -44,7 +44,7 @@ export class ToRomanComponent {
         }
 
         if(value <= 0 || value >= 4000){
-            this.errorMessage = 'The number must be between 1 and 4999';
+            this.errorMessage = 'The number must be between 1 and 3999';
         }else{
             var finalValue = '';
 
